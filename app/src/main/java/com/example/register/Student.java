@@ -19,7 +19,7 @@ public class Student {
     private String gender;
     private String parent_name;
     @TypeConverters({DateTypeConverter.class})
-    private Date dob;
+    private String dob;
     private int class_id;
 
     public int getId() {
@@ -54,11 +54,11 @@ public class Student {
         this.parent_name = parent_name;
     }
 
-    public Date getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
